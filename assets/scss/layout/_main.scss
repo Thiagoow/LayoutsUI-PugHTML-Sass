@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as *;
+
+#app {
+  margin: 0 auto;
+  display: flex;
+  place-items: center;
+  padding: 2rem;
+  text-align: center;
+
+  min-height: 100vh;
+  max-width: 1280px;
+}
+
+.logo {
+  width: 60%;
+  padding: 1rem;
+  will-change: filter;
+  &:hover {
+    filter: drop-shadow(0 0 2rem $shadow-color);
+  }
+}
+
+.card {
+  padding: 2rem;
+}
+
+.title {
+  line-height: 1.1;
+  margin-top: $mg-1;
+  font-size: $h1-font-size;
+  @media screen and (min-width: 360px) {
+    font-size: $biggest-font-size;
+  }
+}
+
+.read-the-docs {
+  color: $txt-color-light;
+}

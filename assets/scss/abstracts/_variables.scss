@@ -1,0 +1,57 @@
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap');
+
+//========== Colors:
+$first-color: #3ac0e1;
+$second-color: #f81ce5;
+$third-color: #d6d700;
+$fourth-color: #56e45f;
+
+$title-color: #fff;
+$txt-color: rgba(#fff, 0.87);
+$txt-color-light: #888;
+
+$body-color: #242424;
+$container-color: #1a1a1a;
+$shadow-color: #efcca3;
+$border-color: #535bf2;
+
+//========== Font and Typography:
+$body-font: 'Inter', sans-serif;
+
+// .5rem = 8px, 1rem = 16px, 1.5rem = 24px ...
+$biggest-font-size: 2rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1.35rem;
+$txt-font-size: 1.1rem;
+$normal-font-size: 1rem;
+$small-font-size: 0.875rem;
+$tiny-font-size: 0.813rem;
+
+//========== Font Weight:
+$wgt-extra-light: 200;
+$wgt-semi-bold: 600;
+$wgt-bolder: 800;
+
+/* ========== Margins:
+ .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+$mg-0-25: 0.25rem;
+$mg-0-5: 0.5rem;
+$mg-0-75: 0.75rem;
+$mg-1: 1rem;
+$mg-1-5: 1.5rem;
+$mg-1-75: 1.75rem;
+$mg-2: 2rem;
+$mg-2-5: 2.5rem;
+$mg-2-75: 2.75rem;
+$mg-3: 3rem;
+
+//========== Z-index:
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;
+
+//========== Border Radius:
+$border-outside-radius: 30px;
+$border-inside-radius: 10px;

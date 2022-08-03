@@ -1,0 +1,18 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title UI Layouts
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  // ========== FAVICON ==========
+  link(href=require('../../assets/img/pug.svg') rel='icon')
+  // ========== SCSS ==========
+  link(href=require('../../assets/scss/styles.scss') rel='stylesheet')
+#app
+  a(href='https://github.com/webdiscus/pug-plugin' target='_blank')
+    img(src=require('../../assets/img/pug.svg') class="logo" alt='Pug logo')
+  h1.title Webpack 5 + Pug & Sass
+  .card
+    button(id="counter" type='button')
+  p.read-the-docs
+    | Click on the Pug logo to learn more
+script(src=require('../main.js') type='module')

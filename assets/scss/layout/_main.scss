@@ -28,9 +28,6 @@
 .title {
   line-height: 1.2;
   font-size: $h1-font-size;
-  @media screen and (min-width: 360px) {
-    font-size: $biggest-font-size;
-  }
 }
 
 .read-the-docs {

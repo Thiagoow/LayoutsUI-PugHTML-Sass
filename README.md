@@ -7,7 +7,7 @@
 # UI Layouts - HTML Pug + Sass & Css Grid 🐶📐
 
 <p>Projeto desenvolvido por: <strong>Thiago Silva Lopes</strong>, em 08/2022.<br/>
-Com objetivo de praticar construção de User Interfaces.</p>
+Com objetivo de praticar construção de User Interfaces com CSS Grid Layout.</p>
 
 ### Demo: https://layouts-ui-grid.vercel.app
 

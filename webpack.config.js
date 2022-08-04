@@ -8,13 +8,13 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist/'),
     publicPath: '/',
-    // output filename of JS files
     filename: 'assets/js/[name].[contenthash:8].js'
+    //☝🏽 Output filename of files with hash for unique id
   },
   plugins: [
     new PugPlugin({
+      pretty: true,
       extractCss: {
-        // output filename of CSS files
         filename: 'assets/css/[name].[contenthash:8].css'
       }
     })
@@ -33,7 +33,6 @@ module.exports = {
         test: /\.(png|jpg|jpeg|ico)/,
         type: 'asset/resource',
         generator: {
-          // output filename of images
           filename: 'assets/img/[name].[hash:8][ext]'
         }
       },
@@ -41,7 +40,6 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
         type: 'asset/resource',
         generator: {
-          // output filename of fonts
           filename: 'assets/fonts/[name][ext][query]'
         }
       }
@@ -51,7 +49,7 @@ module.exports = {
     static: {
       directory: path.join(__dirname, 'dist')
     },
-    //To enable Hot Module Replacement:
+    //To enable HMR:
     watchFiles: {
       paths: ['src/**/*.*', 'assets/scss/**/*.*'],
       options: {

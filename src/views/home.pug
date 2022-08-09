@@ -10,13 +10,13 @@ head
 header
   span.headerContent
     a.logo(href='/')
-      img(src='' class='logoImg' alt='Logo')
+      img(src=require('../../assets/img/css.svg') class='logoImg' alt='Logo')
       h1(class='logoTitle')
-        |HowMuch
+        |Many
         br
-        |PaintINeed?
+        |UI Layouts
     nav.nav
-      img(src='' class='menuImg' alt='Menu Button')
+      img(src=require('../../assets/img/Menu.svg') class='menuImg' alt='Menu Button')
       ul.navLinks
         li.navLink
           a.active(href='' target='_blank')
@@ -30,3 +30,4 @@ header
         li.navLink
           a(href='' target='_blank')
             |Photo Mosaic
+script(src=require('../main.js') type='module')

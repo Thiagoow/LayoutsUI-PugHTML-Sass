@@ -13,7 +13,10 @@ header {
     flex-direction: row;
 
     @media screen and (min-width: 768px) {
-      margin: 0 12rem;
+      margin: 0 10%;
+    }
+    @media screen and (min-width: 1024px) {
+      margin: 0 16%;
     }
   }
 }
@@ -87,7 +90,7 @@ header {
     .navLink {
       padding: 0;
       &:not(:first-child) {
-        margin-left: $mg-2;
+        margin-left: $mg-2-5;
       }
     }
   }

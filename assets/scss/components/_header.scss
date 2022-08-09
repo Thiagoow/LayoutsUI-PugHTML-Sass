@@ -1,0 +1,94 @@
+@use '../abstracts/variables' as *;
+
+header {
+  z-index: $z-fixed;
+  width: 100%;
+  background-color: $container-color;
+
+  .headerContent {
+    margin: 0 $mg-3;
+    padding: $mg-3 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    @media screen and (min-width: 768px) {
+      margin: 0 12rem;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  .logoImg {
+    width: 34px;
+  }
+  .logoTitle {
+    margin-left: $mg-1;
+    font-size: $small-font-size;
+    font-weight: $wgt-semi-bold;
+  }
+}
+
+.nav {
+  align-self: center;
+  .menuImg {
+    display: flex;
+    align-self: center;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.show-menu {
+  display: flex !important;
+  text-align: right;
+}
+
+.navLinks {
+  display: none;
+  position: absolute;
+  top: 7rem;
+  right: $mg-2;
+  z-index: $z-modal;
+
+  text-align: center;
+  padding: $mg-1-5;
+  flex-direction: column;
+  font-size: $small-font-size;
+  font-weight: $wgt-semi-bold;
+
+  border-radius: $border-inside-radius;
+  color: $body-color;
+  background-color: $container-color;
+  box-shadow: 0 0 1rem rgba($txt-color-light, 0.2);
+
+  .navLink {
+    padding: $mg-1 0;
+    .active {
+      color: $first-color;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    inset: 0;
+    padding: 0;
+    display: flex;
+    box-shadow: none;
+    position: relative;
+    flex-direction: row;
+    background-color: transparent;
+
+    .navLink {
+      padding: 0;
+      &:not(:first-child) {
+        margin-left: $mg-2;
+      }
+    }
+  }
+}

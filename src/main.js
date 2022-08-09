@@ -1,12 +1,11 @@
-//import { setupCounter } from './counter.js';
-export function setupCounter(element) {
-  let counter = 0;
-  const setCounter = (count) => {
-    counter = count;
-    element.innerHTML = `count is ${counter}`;
-  };
-  element.addEventListener('click', () => setCounter(++counter));
-  setCounter(0);
-}
+/*==================== MENU SHOW & HIDDEN ====================*/
+const navMenu = document.getElementById('nav-menu'),
+  navToggle = document.getElementById('menu-toggle');
 
-setupCounter(document.querySelector('#counter'));
+/*===== MENU SHOW =====*/
+/* Validate if constant exists */
+if (navToggle) {
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show-menu');
+  });
+}

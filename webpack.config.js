@@ -3,7 +3,7 @@ const PugPlugin = require('pug-plugin');
 
 module.exports = {
   entry: {
-    index: './src/views/index.pug'
+    index: './src/views/home.pug'
   },
   output: {
     path: path.join(__dirname, 'dist/'),

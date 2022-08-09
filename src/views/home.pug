@@ -1,0 +1,32 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title UI Layouts
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  // ========== FAVICON ==========
+  link(href=require('../../assets/img/pug.svg') rel='icon')
+  // ========== SCSS ==========
+  link(href=require('../../assets/scss/styles.scss') rel='stylesheet')
+header
+  span.headerContent
+    a.logo(href='/')
+      img(src='' class='logoImg' alt='Logo')
+      h1(class='logoTitle')
+        |HowMuch
+        br
+        |PaintINeed?
+    nav.nav
+      img(src='' class='menuImg' alt='Menu Button')
+      ul.navLinks
+        li.navLink
+          a.active(href='' target='_blank')
+            |Home
+        li.navLink
+          a(href='' target='_blank')
+            |ManyInOne
+        li.navLink
+          a(href='' target='_blank')
+            |News &amp; Articles
+        li.navLink
+          a(href='' target='_blank')
+            |Photo Mosaic

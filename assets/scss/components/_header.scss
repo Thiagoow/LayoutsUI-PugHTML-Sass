@@ -26,7 +26,7 @@ header {
   align-items: center;
 
   .logoImg {
-    width: 34px;
+    width: 2.4rem;
   }
   .logoTitle {
     margin-left: $mg-1;
@@ -56,12 +56,12 @@ header {
 .navLinks {
   display: none;
   position: absolute;
-  top: 7rem;
+  top: 6rem;
   right: 6%;
   z-index: $z-modal;
 
   text-align: center;
-  padding: $mg-1-5;
+  padding: $mg-2 $mg-1-5;
   flex-direction: column;
   font-size: $small-font-size;
   font-weight: $wgt-semi-bold;

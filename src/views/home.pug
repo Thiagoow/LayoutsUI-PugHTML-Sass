@@ -7,27 +7,7 @@ head
   link(href=require('../../assets/img/css.svg') rel='icon')
   // ========== SCSS ==========
   link(href=require('../../assets/scss/styles.scss') rel='stylesheet')
-header
-  span.headerContent
-    a.logo(href='/')
-      img(src=require('../../assets/img/css.svg') class='logoImg' alt='Logo')
-      h1(class='logoTitle')
-        |Many
-        br
-        |UI Layouts
-    nav.nav
-      img(src=require('../../assets/img/Menu.svg') id="menu-toggle" class='menuImg' alt='Menu Button')
-      ul(class='navLinks' id="nav-menu")
-        li.navLink
-          a.active(href='' target='_blank')
-            |Home
-        li.navLink
-          a(href='' target='_blank')
-            |ManyInOne
-        li.navLink
-          a(href='' target='_blank')
-            |News &amp; Articles
-        li.navLink
-          a(href='' target='_blank')
-            |Photo Mosaic
+include ../components/header.pug
++header
+
 script(src=require('../main.js') type='module')

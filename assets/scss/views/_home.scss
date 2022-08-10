@@ -6,10 +6,10 @@
   grid-template-rows: 100px auto 100px;
   grid-template-columns: 1fr;
 
-  //👇🏽 To every child of this parent:
-  & > * {
+  & > *,
+  .homeChild {
     resize: both;
-    overflow: auto;
+    overflow: hidden;
   }
 
   @media screen and (min-width: 768px) {
@@ -50,8 +50,6 @@
   border-radius: $border-outside-radius;
   background-color: $second-color;
 
-  resize: both;
-  overflow: auto;
   font-size: $h1-font-size;
   -webkit-text-stroke: 2px #000;
   @media screen and (min-width: 768px) {

@@ -17,7 +17,6 @@ textarea {
   font-size: $normal-font-size;
 }
 body {
-  display: flex;
   background: $body-color;
   color: $txt-color;
   transition: 0.4s; /* for dark/light mode animation */

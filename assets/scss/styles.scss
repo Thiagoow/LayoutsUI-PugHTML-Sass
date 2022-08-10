@@ -7,9 +7,9 @@
 @use 'base/reset';
 @use 'base/base';
 
-@use 'layout/home';
-
 @use 'components/buttons';
 @use 'components/header';
+
+@use 'views/home';
 
 //@use "themes/theme";

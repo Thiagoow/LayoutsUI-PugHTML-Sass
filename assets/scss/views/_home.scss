@@ -3,7 +3,7 @@
 .homeParent {
   display: grid;
   background-color: $txt-color;
-  grid-template-rows: 100px auto 100px;
+  grid-template-rows: 80px auto 80px;
   grid-template-columns: 1fr;
 
   & > *,

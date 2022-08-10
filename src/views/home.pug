@@ -10,4 +10,15 @@ head
 include ../components/header.pug
 +header
 
+main.homeParent
+  aside.leftSide
+    p Sidebar Left
+  article.homeMain
+    .homeChild(contenteditable)
+      h1 ツ
+  aside.rightSide
+    p Sidebar Right
+
+footer
+  p Footer
 script(src=require('../main.js') type='module')

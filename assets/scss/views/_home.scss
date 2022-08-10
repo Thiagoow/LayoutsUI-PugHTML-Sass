@@ -1,1 +1,69 @@
 @use '../abstracts/variables' as *;
+
+.homeParent {
+  display: grid;
+  background-color: $txt-color;
+  grid-template-rows: 100px auto 100px;
+  grid-template-columns: 1fr;
+
+  //👇🏽 To every child of this parent:
+  & > * {
+    resize: both;
+    overflow: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    grid-template-rows: 1fr;
+    grid-template-columns: 200px auto 200px;
+  }
+}
+
+.leftSide,
+.rightSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: $wgt-semi-bold;
+  background-color: $body-color;
+}
+
+@media screen and (min-width: 768px) {
+  .leftSide p {
+    writing-mode: sideways-lr;
+  }
+  .rightSide p {
+    writing-mode: vertical-rl;
+  }
+}
+
+.homeMain {
+  display: grid;
+  height: 90vh;
+  place-items: center;
+  background-color: $txt-color-light;
+}
+
+.homeChild {
+  display: grid;
+  place-items: center;
+  padding: 2.3rem 1.4rem;
+  border-radius: $border-outside-radius;
+  background-color: $second-color;
+
+  resize: both;
+  overflow: auto;
+  font-size: $h1-font-size;
+  -webkit-text-stroke: 2px #000;
+  @media screen and (min-width: 768px) {
+    font-size: $biggest-font-size;
+  }
+}
+
+footer {
+  display: grid;
+  place-items: center;
+
+  padding: $mg-2-5 0;
+  background-color: $third-color;
+  font-weight: $wgt-semi-bold;
+}

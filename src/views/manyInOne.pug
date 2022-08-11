@@ -1,0 +1,21 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title UI Layouts
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  // ========== FAVICON ==========
+  link(href=require('../../assets/img/css.svg') rel='icon')
+  // ========== SCSS ==========
+  link(href=require('../../assets/scss/styles.scss') rel='stylesheet')
+body
+  main.container
+    .gridSections
+      section.aspectRatio
+        h1 1
+      section.resizeCards 
+        h1 2
+      section.clampCenter 
+        h1 3
+      section.repeatAutoMinmax  
+        h1 4
+script(src=require('../main.js') type='module')

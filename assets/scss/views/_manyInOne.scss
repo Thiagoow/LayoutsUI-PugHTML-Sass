@@ -14,7 +14,7 @@
   grid-template-areas:
     'topLeft topRight'
     'bottomLeft bottomRight';
-  padding: 6rem;
+  padding: 1rem 3rem;
   gap: 2rem;
   place-items: center;
 
@@ -22,8 +22,13 @@
     width: 100%;
     height: 100%;
 
+    max-width: 412px;
+    max-height: 240px;
+
     display: grid;
     place-items: center;
+    resize: both;
+    overflow: hidden;
   }
 }
 

@@ -3,9 +3,9 @@ const PugPlugin = require('pug-plugin');
 
 module.exports = {
   entry: {
-    index: './src/views/home.pug'
-    /*     
+    index: './src/views/home.pug',
     manyInOne: './src/views/manyInOne.pug',
+    /*     
     newsArticles: './src/views/newsArticles.pug',
     photoMosaic: './src/views/photoMosaic.pug' */
   },

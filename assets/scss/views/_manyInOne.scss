@@ -8,6 +8,10 @@
   position: absolute;
   inset: 0;
   margin: auto;
+
+  @media screen and (max-width: 1024px) {
+    max-width: 524px;
+  }
 }
 
 .gridSections {

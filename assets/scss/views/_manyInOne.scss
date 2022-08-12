@@ -24,18 +24,18 @@
   }
 
   & > * {
-    // ☝🏽 To all child elements:
+    //☝🏽 To all child elements:
+    display: grid;
+    place-items: center;
+    resize: both;
+    overflow: hidden;
+
     @media screen and (min-width: 640px) {
       aspect-ratio: 1;
     }
     @media screen and (min-width: 1024px) {
       aspect-ratio: 13 / 8;
     }
-
-    display: grid;
-    place-items: center;
-    resize: both;
-    overflow: hidden;
   }
 }
 

@@ -21,3 +21,19 @@ body {
   color: $txt-color;
   transition: 0.4s; /* for dark/light mode animation */
 }
+
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: $container-color;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $first-color;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: darken($first-color, 25%);
+}

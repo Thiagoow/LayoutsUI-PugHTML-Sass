@@ -44,19 +44,19 @@
   }
 }
 
-.aspectRatio {
+.bluePattern {
   grid-area: topLeft;
   background-color: $first-color;
 }
 
 .resizeCards {
   grid-area: topRight;
-  background-color: $fourth-color;
+  background-color: $third-color;
 }
 
-.clampCenter {
+.greenCalendar {
   grid-area: bottomLeft;
-  background-color: $third-color;
+  background-color: $fourth-color;
 }
 
 .repeatAutoMinmax {

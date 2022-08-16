@@ -3,7 +3,7 @@
 .homeParent {
   display: grid;
   background-color: $txt-color;
-  grid-template-rows: 80px auto 80px;
+  grid-template-rows: 5rem 1fr 5rem;
   grid-template-columns: 1fr;
 
   & > *,
@@ -14,7 +14,7 @@
 
   @media screen and (min-width: 768px) {
     grid-template-rows: 1fr;
-    grid-template-columns: 200px auto 200px;
+    grid-template-columns: 12.5rem 1fr 12.5rem;
   }
 }
 

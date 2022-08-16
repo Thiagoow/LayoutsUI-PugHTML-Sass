@@ -1,0 +1,6 @@
+@use '../abstracts/variables' as *;
+
+.repeatAutoMinmax {
+  grid-area: bottomRight;
+  background-color: $container-color;
+}

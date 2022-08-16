@@ -7,8 +7,11 @@
 @use 'base/reset';
 @use 'base/base';
 
-@use 'components/buttons';
 @use 'components/header';
+@use 'components/bluePattern';
+@use 'components/resizeCards';
+@use 'components/greenCalendar';
+@use 'components/repeatAutoMinmax';
 
 @use 'views/home';
 @use 'views/manyInOne';

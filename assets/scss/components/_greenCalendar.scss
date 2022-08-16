@@ -1,0 +1,6 @@
+@use '../abstracts/variables' as *;
+
+.greenCalendar {
+  grid-area: bottomLeft;
+  background-color: $fourth-color;
+}

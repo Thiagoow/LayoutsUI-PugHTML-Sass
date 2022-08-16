@@ -2,5 +2,23 @@
 
 .repeatAutoMinmax {
   grid-area: bottomRight;
+
+  color: $title-color;
   background-color: $container-color;
+
+  & > :nth-child(1) {
+    background-color: $first-color;
+  }
+  & > :nth-child(2) {
+    background-color: $second-color;
+  }
+  & > :nth-child(3) {
+    background-color: $third-color;
+  }
+  & > :nth-child(4) {
+    background-color: $fourth-color;
+  }
+  & > :nth-child(5) {
+    background-color: $txt-color-light;
+  }
 }

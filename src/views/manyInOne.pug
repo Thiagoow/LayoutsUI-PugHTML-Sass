@@ -31,7 +31,16 @@ body
           while n <= 8
             article= n++
 
-      section.repeatAutoMinmax  
-        h1 4
+      section.repeatAutoMinmax
+        - 
+          const squares = [
+            'First',
+            'Second',
+            'Third',
+            'Fourth',
+            'Fifth',
+          ]
+        each i in squares
+          article= i
 
 script(src=require('../main.js') type='module')

@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as *;
+
+.resizeCards {
+  grid-area: topRight;
+  background-color: $third-color;
+}
+.resContainer {
+  width: 80%;
+  height: 80%;
+  display: grid;
+  row-gap: 1rem;
+  margin: 1.2rem 0;
+  grid: repeat(3, 3rem) / 1fr;
+
+  @media screen and (min-width: 640px) {
+    width: 100%;
+    height: 70%;
+    gap: 0 1rem;
+    justify-content: center;
+    grid: 1fr / repeat(3, 22%);
+  }
+  @media screen and (min-width: 1024px) {
+    gap: 0 2rem;
+  }
+
+  & > * {
+    display: grid;
+    place-items: center;
+    font-size: $tiny-font-size;
+    font-weight: $wgt-semi-bold;
+    background-color: $body-color;
+    writing-mode: horizontal-tb;
+
+    @media screen and (min-width: 640px) {
+      writing-mode: sideways-lr;
+    }
+  }
+}

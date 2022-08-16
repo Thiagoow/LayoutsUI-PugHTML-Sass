@@ -17,7 +17,7 @@
 .gridSections {
   gap: 2rem;
   display: grid;
-  margin: 4rem auto;
+  margin: 0 auto;
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
     'topLeft'
@@ -26,6 +26,7 @@
     'bottomRight';
 
   @media screen and (max-width: 640px) {
+    margin: 3rem auto;
     max-width: 284px;
   }
   @media screen and (min-width: 640px) {

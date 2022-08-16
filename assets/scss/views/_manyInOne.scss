@@ -17,7 +17,7 @@
 .gridSections {
   gap: 2rem;
   display: grid;
-  margin: 0 auto;
+  margin: 4rem auto;
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
     'topLeft'

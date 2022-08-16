@@ -25,7 +25,11 @@ body
           .three Third Column
 
       section.greenCalendar 
-        h1 3
+        article Main Title
+        - var n = 1;
+        .dates
+          while n <= 8
+            article= n++
 
       section.repeatAutoMinmax  
         h1 4

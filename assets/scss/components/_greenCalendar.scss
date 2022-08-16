@@ -3,4 +3,36 @@
 .greenCalendar {
   grid-area: bottomLeft;
   background-color: $fourth-color;
+  grid-template-rows: 35% 65%;
+
+  & > * {
+    width: 100%;
+    height: 100%;
+  }
+  & > :first-child {
+    display: grid;
+    place-items: center;
+    background-color: $txt-color;
+  }
+
+  .dates > *,
+  & > :first-child {
+    color: $container-color;
+    font-weight: $wgt-semi-bold;
+    background-color: $txt-color;
+    border: 4px solid $border-color;
+  }
+}
+
+.dates {
+  display: grid;
+  gap: 0.8rem;
+  padding: 0.8rem;
+  grid: repeat(2, auto) / repeat(4, auto);
+
+  & > * {
+    display: grid;
+    place-items: center;
+    border-radius: $border-inside-radius;
+  }
 }

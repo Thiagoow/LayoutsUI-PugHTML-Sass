@@ -6,9 +6,9 @@
   color: $title-color;
   background-color: $container-color;
 
-  $colors-list: $first-color, $second-color, $third-color, $txt-color-light;
-  @each $item in $colors-list {
-    $i: index($colors-list, $item);
+  $colors: $first-color, $second-color, $third-color, $txt-color-light;
+  @each $item in $colors {
+    $i: index($colors, $item);
     & > :nth-child(#{$i}) {
       background-color: $item;
     }

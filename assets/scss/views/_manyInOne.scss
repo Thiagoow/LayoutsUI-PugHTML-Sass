@@ -1,16 +1,16 @@
 @use '../abstracts/variables' as *;
 
 .container {
-  width: 75%;
-  height: fit-content;
-  max-width: 54rem;
-
   position: absolute;
   inset: 0;
   margin: auto;
 
-  @media screen and (max-width: 1024px) {
-    max-width: 524px;
+  width: 75%;
+  height: fit-content;
+  max-width: 33rem;
+
+  @media screen and (min-width: 1024px) {
+    max-width: 54rem;
   }
 }
 

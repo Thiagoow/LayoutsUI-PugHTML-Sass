@@ -3,14 +3,40 @@
 .repeatAutoMinmax {
   grid-area: bottomRight;
 
-  color: $title-color;
+  align-content: center;
+  justify-content: center;
   background-color: $container-color;
+  // RAM -> Repeat, AutoFit, MinMax 👇🏼
+  grid-template-columns: repeat(auto-fit, minmax(auto, 50px));
 
-  $colors: $first-color, $second-color, $third-color, $txt-color-light;
+  gap: 1rem;
+  color: $title-color;
+  font-size: $tiny-font-size;
+
+  @media (min-width: 324px) {
+    font-size: $small-font-size;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 25%));
+  }
+  @media (min-width: 1024px) {
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 90px));
+  }
+
+  $colors: $first-color, $second-color, $third-color, $fourth-color,
+    $txt-color-light;
   @each $item in $colors {
     $i: index($colors, $item);
     & > :nth-child(#{$i}) {
       background-color: $item;
     }
+  }
+
+  & > * {
+    display: grid;
+    place-items: center;
+
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
   }
 }

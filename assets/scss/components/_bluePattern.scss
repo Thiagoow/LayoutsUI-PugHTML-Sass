@@ -15,19 +15,12 @@
   & > * {
     border: 2px solid $txt-color;
   }
-  & > :nth-child(1) {
-    grid-area: one;
-  }
-  & > :nth-child(2) {
-    grid-area: two;
-  }
-  & > :nth-child(3) {
-    grid-area: three;
-  }
-  & > :nth-child(4) {
-    grid-area: four;
-  }
-  & > :nth-child(5) {
-    grid-area: five;
+
+  $gridAreas: one, two, three, four, five;
+  @each $grid in $gridAreas {
+    $i: index($gridAreas, $grid);
+    & > :nth-child(#{$i}) {
+      grid-area: $grid;
+    }
   }
 }

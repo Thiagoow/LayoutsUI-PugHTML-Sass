@@ -28,7 +28,11 @@
   display: grid;
   gap: 0.8rem;
   padding: 0.8rem;
-  grid: repeat(2, auto) / repeat(4, auto);
+  grid: repeat(2, auto) / repeat(auto-fit, minmax(50px, 1fr));
+  //Using RAM -> Repeat, AutoFit, MinMax ☝🏽
+  @media (min-width: 1024px) {
+    grid: repeat(2, auto) / repeat(4, auto);
+  }
 
   & > * {
     display: grid;

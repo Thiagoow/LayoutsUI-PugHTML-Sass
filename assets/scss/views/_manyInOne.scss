@@ -3,12 +3,15 @@
 .container {
   position: absolute;
   inset: 0;
-  margin: auto;
+  margin: 0 auto;
 
   width: 75%;
   height: fit-content;
   max-width: 33rem;
 
+  @media screen and (min-width: 640px) {
+    margin: auto;
+  }
   @media screen and (min-width: 1024px) {
     max-width: 54rem;
   }

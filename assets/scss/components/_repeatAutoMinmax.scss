@@ -6,8 +6,7 @@
   align-content: center;
   justify-content: center;
   background-color: $container-color;
-  // RAM -> Repeat, AutoFit, MinMax 👇🏼
-  grid-template-columns: repeat(auto-fit, minmax(auto, 50px));
+  grid-template-columns: repeat(auto-fill, 50px);
 
   gap: 1rem;
   color: $title-color;
@@ -15,11 +14,11 @@
 
   @media (min-width: 324px) {
     font-size: $small-font-size;
-    grid-template-columns: repeat(auto-fit, minmax(auto, 25%));
+    grid-template-columns: repeat(auto-fill, 25%);
   }
   @media (min-width: 1024px) {
     padding: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(auto, 90px));
+    grid-template-columns: repeat(auto-fill, 90px);
   }
 
   $colors: $first-color, $second-color, $third-color, $fourth-color,

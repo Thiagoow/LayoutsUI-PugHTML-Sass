@@ -4,10 +4,9 @@ const PugPlugin = require('pug-plugin');
 module.exports = {
   entry: {
     index: './src/views/home.pug',
-    manyInOne: './src/views/manyInOne.pug'
-    /*     
-    photoMosaic: './src/views/photoMosaic.pug', 
-    masonryLayout: './src/views/masonryLayout.pug' */
+    manyInOne: './src/views/manyInOne.pug',
+    photoMosaic: './src/views/photoMosaic.pug'
+    //masonryLayout: './src/views/masonryLayout.pug'
   },
   output: {
     path: path.join(__dirname, 'dist/'),

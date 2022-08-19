@@ -1,0 +1,28 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title UI Layouts
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  // ========== FAVICON ==========
+  link(href=require('../../assets/img/css.svg') rel='icon')
+  // ========== SCSS ==========
+  link(href=require('../../assets/scss/styles.scss') rel='stylesheet')
+body
+  main.photoMosaic
+    .wide.tall(style="background-image: url('https://images.unsplash.com/photo-1464820453369-31d2c0b651af')")
+    .wide(style="background-image: url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df')")
+    div(style="background-image: url('https://images.unsplash.com/photo-1500042600524-37ecb686c775')")
+
+    div(style="background-image: url('https://images.unsplash.com/photo-1583531172005-814191b8b6c0')")
+    .wide.tall(style="background-image: url('https://images.unsplash.com/photo-1561495376-dc9c7c5b8726')")
+    div(style="background-image: url('https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6')")
+   
+    div(style="background-image: url('https://images.unsplash.com/photo-1488330890490-c291ecf62571')")
+    .wide(style="background-image: url('https://images.unsplash.com/photo-1439405326854-014607f694d7')")
+    div(style="background-image: url('https://images.unsplash.com/photo-1522050212171-61b01dd24579')")
+    
+    div(style="background-image: url('https://images.unsplash.com/photo-1552862750-746b8f6f7f25')")
+    div(style="background-image: url('https://images.unsplash.com/photo-1508788397430-55907b348ba8')")
+    div(style="background-image: url('https://images.unsplash.com/photo-1580713863942-bea7b600d515')")
+
+script(src=require('../main.js') type='module')

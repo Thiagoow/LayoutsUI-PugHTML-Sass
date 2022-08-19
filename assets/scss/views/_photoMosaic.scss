@@ -1,0 +1,45 @@
+@use '../abstracts/variables' as *;
+
+.photoMosaic {
+  padding: 1rem;
+  margin: auto;
+  background-color: $container-color;
+
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: row dense;
+  //☝🏽 Fix holes in grid
+
+  grid-auto-rows: 8rem;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+
+  @media (min-width: 432px) {
+    grid-auto-rows: 12rem;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+  @media (min-width: 1040px) {
+    grid-auto-rows: 15rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+}
+
+.photoMosaic > * {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  transition: all 500ms;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: $border-inside-radius;
+}
+
+@media (min-width: 640px) {
+  .wide {
+    grid-column: span 2 / auto;
+  }
+  .tall {
+    grid-row: span 2 / auto;
+  }
+}

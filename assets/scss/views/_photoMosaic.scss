@@ -21,6 +21,12 @@
     grid-auto-rows: 15rem;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
+
+  @for $i from 1 through 12 {
+    & > :nth-child(#{$i}) {
+      background-image: url(../../img/PhotoMosaic/#{$i}.jpg);
+    }
+  }
 }
 
 .photoMosaic > * {

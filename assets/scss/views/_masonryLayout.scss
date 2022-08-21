@@ -1,1 +1,36 @@
 @use '../abstracts/variables' as *;
+
+.masonryLayout {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 13rem);
+  grid-auto-rows: 1rem;
+
+  & > * {
+    margin: 1rem 0.6rem;
+    border-radius: $border-inside-radius;
+  }
+}
+
+.small {
+  grid-row-end: span 12;
+}
+.medium {
+  grid-row-end: span 20;
+}
+.large {
+  grid-row-end: span 24;
+}
+
+$colors: $first-color, $second-color, $third-color, $fourth-color,
+  $txt-color-light;
+@each $item in $colors {
+  $i: index($colors, $item);
+  .card:nth-of-type(5n + #{$i}) {
+    background-color: $item;
+  }
+}

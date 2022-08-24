@@ -11,7 +11,10 @@
   grid-auto-rows: 1rem;
 
   & > * {
-    margin: 1rem 0.6rem;
+    margin: 0.6rem;
+    @media (min-width: 448px) {
+      margin: 0.8rem 0.6rem;
+    }
     border-radius: $border-inside-radius;
   }
 }

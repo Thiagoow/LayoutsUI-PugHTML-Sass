@@ -51,7 +51,7 @@
   background-color: $second-color;
 
   font-size: $h1-font-size;
-  -webkit-text-stroke: 2px #000;
+  -webkit-text-stroke: 2px $container-color;
   @media screen and (min-width: 768px) {
     font-size: $biggest-font-size;
   }

@@ -1,8 +1,7 @@
-<!--
+<!---->
 <div align="center">
-<img src="./public/app.jpg" align="center">
+<img src="./docs/app.jpg" align="center">
 </div>
--->
 
 # UI Layouts - HTML Pug + Sass & Css Grid 🐶📐
 

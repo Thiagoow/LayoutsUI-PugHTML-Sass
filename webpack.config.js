@@ -2,32 +2,31 @@ const path = require('path');
 const PugPlugin = require('pug-plugin');
 
 module.exports = {
-  entry: {
-    index: './src/views/home.pug',
-    manyInOne: './src/views/manyInOne.pug',
-    photoMosaic: './src/views/photoMosaic.pug',
-    masonryLayout: './src/views/masonryLayout.pug'
-  },
   output: {
     path: path.join(__dirname, 'dist/'),
-    publicPath: '/',
-    filename: 'assets/js/[name].[contenthash:8].js'
-    //☝🏽 Output filename of files with hash for unique id
   },
   plugins: [
     new PugPlugin({
-      pretty: true,
-      extractCss: {
-        filename: 'assets/css/[name].[contenthash:8].css'
-      }
-    })
+      entry: {
+        // define templates here
+        index: './src/views/home.pug',
+        manyInOne: './src/views/manyInOne.pug',
+        photoMosaic: './src/views/photoMosaic.pug',
+        masonryLayout: './src/views/masonryLayout.pug',
+      },
+      js: {
+        // JS output filename with hash for unique id
+        filename: 'assets/js/[name].[contenthash:8].js',
+      },
+      css: {
+        // CSS output filename with hash for unique id
+        filename: 'assets/css/[name].[contenthash:8].css',
+      },
+      pretty: 'auto', // Format HTML in development mode only
+    }),
   ],
   module: {
     rules: [
-      {
-        test: /\.pug$/,
-        loader: PugPlugin.loader
-      },
       {
         test: /\.(css|sass|scss)$/,
         use: ['css-loader', 'sass-loader']
@@ -49,10 +48,8 @@ module.exports = {
     ]
   },
   devServer: {
-    static: {
-      directory: path.join(__dirname, 'dist')
-    },
-    //To enable HMR:
+    static: path.join(__dirname, 'dist'),
+    // Enable live reload
     watchFiles: {
       paths: ['src/**/*.*', 'assets/scss/**/*.*'],
       options: {

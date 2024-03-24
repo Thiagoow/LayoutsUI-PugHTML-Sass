@@ -3,13 +3,14 @@ body
     header
       span.headerContent
         a.logo(href='/')
-          img(src=require('../../assets/img/css.svg') class='logoImg' alt='Logo')
+          //- path to source asset must be relative to entrypoint template
+          img(src='../../assets/img/css.svg' class='logoImg' alt='Logo')
           h1(class='logoTitle')
             |Many
             br
             |UI Layouts
         nav.nav
-          img(src=require('../../assets/img/Menu.svg') id="menu-toggle" class='menuImg' alt='Menu Button')
+          img(src='../../assets/img/Menu.svg' id="menu-toggle" class='menuImg' alt='Menu Button')
           ul(class='navLinks' id="nav-menu")
             li.navLink
               a.active(href='/') Home
